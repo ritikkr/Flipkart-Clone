@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root {
-    --header-height: 6.6vh;
+    --header-height: 6.8vh;
     --main-bg-primary-color: #2874F0;
     --robot400: 'Roboto', sans-serif;
+    --bodycolor: #212121;
 }
 
 * {
@@ -17,8 +18,9 @@
 
 body {
     font-size: 14px;
-    color: #212121;
+    color: var(--bodycolor);
     line-height: 1.4;
+    background-color:#F1F3F6;
 }
 
 header {
@@ -234,15 +236,163 @@ nav {
     height: 58px;
     width: 58px;
 }
+/* Slider windows Css starts */
 .slider-container{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 300px;
+    height: 320px;
     background-color:#F1F3F6;
 }
 .slider img{
     width: 99vw;
     height: inherit;
+}
+/* Card Container css */
+.card-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 99vw;
+    height: 360px;
+    background-color:#F1F3F6;
+    position: relative;
+    top: -18px;
+}
+.deal-of-the-day-container{
+    background-color: #fff;
+    width: 82vw;
+    height: inherit;
+    position: relative;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.deal-text, .card-item-title
+{
+   
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.1em solid var(--bodycolor);
+    
+}
+.deal-text p, .card-item-title p{
+    color:black;
+    font-size:20px;
+    font-family: var(--robot400) ;
+    font-weight:500;
+    line-height: 32px;
+    position: relative;
+    left: 20px;
+    
+
+}
+.view-all{
+    background-color: var(--main-bg-primary-color);
+    text-align: center;
+    height: 60%;
+    width: 100px;
+    position: relative;
+    right: 20px;
+    border: none;
+    outline: none;
+}
+.deal-content
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: inherit;
+    height: 80%;
+    padding: 0 20px;
+}
+.deal-content .item-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.deal-content img{
+    height: 160px;
+    width: 110px;
+}
+.deal-content img:hover{
+    height: 170px;
+    width: 120px;
+}
+.text-item-category{
+    color:black;
+    
+    font-family: var(--robot400);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.deal-content .item-content .text-item-offer{
+    color:green;
+    font-family: var(--robot400);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.deal-content .item-content .text-item-tag{
+    color:gray;
+    font-family: var(--robot400);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+
+.card-container .AdCard{
+    background-color: yellow;
+    width: 15.5vw;
+    height: inherit;
+    position: relative;
+    /* right: 5px; */
+    
+}
+.AdCard img{
+    height: inherit;
+    width: inherit;
+}
+.three-Card-template{
+    width: 99vw;
+    height: 280px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.three-Card-template img{
+    height: 260px;
+    width: 500px;
+}
+
+.give-india-container{
+    display: flex;
+    width: 100vw;
+}
+.give-india-container img{
+    display: flex;
+    width: 98vw;
+    height: 260px;
+    justify-content: space-around;
+    position: relative;
+    right: -14px;
+}
+.card-item-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 99vw;
+    flex-direction: column;
+}
+.card-item-list{
+    height: 80%;
+    width: 100%;
+    background-color: red;
 }
